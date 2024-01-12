@@ -1,6 +1,19 @@
 @charset "UTF-8";
-
+/*pc버전 스타일
+	
+	1. 스타일 초기화 : 직접, reset 사용할건지
+	
+	2. 스타일 관련 공통 스타일, 각 구역별 세부 스타일(코딩 컨벤션)
+	
+	3. 레이아웃 기법: 여러가지~ 어떤것을 어떻게 사용할지
+*/
 * {
-	margin : 0;
-	padding : 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body { 
+	font-family: 'Maven Pro', 'Noto Sans KR', sans-serif;
+	/*글꼴 순서가 내 html에서 지원하는 우선순서  */
 }
