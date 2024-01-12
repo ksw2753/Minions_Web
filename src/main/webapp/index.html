@@ -4,31 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>미니언즈</title>
+<!--link:favicon-->
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Noto+Sans+KR:wght@400;800&display=swap" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Noto+Sans+KR:wght@400;800&display=swap"
+	rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-	<h1 class="d-none">미니언즈 스핀오프 프로모션 웹사이트</h1>
+	<h1 class="d-none">미니언즈4 스핀오프 프로모션 웹사이트</h1>
 	<!--h1은 검색 우선순위-->
 	<!--div보단 section(시멘틱)이 더 우선순위 -->
 	<header>
-		<div>
-			<a href="#">로그인</a> <a href="#">회원가입</a> <a href="#">사이트맵</a>
+		<div class="container mx-auto d-flex justify-between align-center">
+			<div class="links d-flex gap-1">
+				<a href="#">로그인</a> 
+				<a href="#">회원가입</a> 
+				<a href="#">사이트맵</a>
+			</div>
+			<div class="h-logo">
+				<a href="#"><img src="images/logo.png" alt="미니언즈 로고" /></a>
+			</div>
+			<div class="social d-flex gap-1">
+				<img src="images/sns_icon1.png" alt="카카오" /> <img
+					src="images/sns_icon2.png" alt="페이스북" /> <img
+					src="images/sns_icon3.png" alt="트위터" />
+			</div>
 		</div>
-		<div class="h-logo">
-			<a href="#"><img src="images/logo.png" alt="미니언즈 로고" /></a>
-		</div>
-		<div>
-			<img src="images/sns_icon1.png" alt="카카오" /> <img
-				src="images/sns_icon2.png" alt="페이스북" /> <img
-				src="images/sns_icon3.png" alt="트위터" />
-		</div>
+		<hr>
 		<nav>
-			<a href="#">미니언즈소개</a> <a href="#">캐릭터정보</a> <a href="#">커뮤니티</a> <a
-				href="#">제휴업체</a>
+			<div class="container mx-auto d-flex justify-center">
+				<a href="#">미니언즈소개</a> 
+				<a href="#">캐릭터정보</a> 
+				<a href="#">커뮤니티</a> 
+				<ahref="#">제휴업체</a>
+			</div>
+			<!-- /.container mx-auto d-flex justify-center -->
 		</nav>
 	</header>
 	<section id="trailer">
