@@ -3,9 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Insert title here</title>
+<title>미니언즈</title>
 </head>
 <body>
-
+	<h1 class="d-none">미니언즈 스핀오프 프로모션 웹사이트</h1>
+	<!--h1은 검색 우선순위--><!--div보단 section(시멘틱)이 더 우선순위 -->
+	<header>
+		<div>
+		<a href="#">로그인</a>
+		<a href="#">회원가입</a>
+		<a href="#">사이트맵</a>
+		</div>
+		<div class="h-logo">
+			<a href="#"><img src="images/logo.png" alt="미니언즈 로고" /></a>
+		</div>
+		<div>
+			<img src="images/sns_icon1.png" alt="카카오" />
+			<img src="images/sns_icon2.png" alt="페이스북" />
+			<img src="images/sns_icon3.png" alt="트위터" />
+		</div>
+		<nav>
+			<a href="#">미니언즈소개</a>
+			<a href="#">캐릭터정보</a>
+			<a href="#">커뮤니티</a>
+			<a href="#">제휴업체</a>
+		</nav>
+	</header>
+	<section id="trailer">
+		<!--video, audio태그: 리소스가 있다면사용-->
+		<!--영상스트리밍 서버를 통해서 (유튜브)제공하는 iframe 태그사용-->
+		<!--iframe: 오래전 비표준태그(영상, 오디오를 연결하는)에서 현재는 표준으로 확정  -->
+		<div class="devils">
+			<img src="images/visual_img.png" alt="minions-devils" />
+		</div>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/_mIrD-22dug?si=40Ph4T7wzO4ZDu1p&amp;start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<!--유튜브 영상-공유-퍼가기-->
+	</section>
+	<main>
+		<article>
+			<h2>character</h2>
+			<div class="characters">
+				<div class="character">
+					<img src="images/char1.jpg" alt="DAVE" />
+				</div>
+				<div class="character">
+					<img src="images/char2.jpg" alt="LANCE" />
+				</div>
+				<div class="character">
+					<img src="images/char3.jpg" alt="JERRY" />
+				</div>
+			</div>
+		</article>
+	</main>
+	<!--미니언즈 X 맥도날드 : 콜라보 이벤트  -->
+	<aside><!--본문과 관련이 적은 내용, 광고 등-->
+		<a href="#"><img src="images/banner.jpg" alt="미니언즈 콜라보 배너" /></a>
+	</aside>
+	<footer>
+		<div class="extra-links">
+		<a href="#">제휴업체</a>
+		<a href="#">이용약관</a>
+		<a href="#">개인정보 취급방침</a>
+		</div>
+		<address>
+			<p>copyright&copy; 2024 <span class="brand">minions</span> all rights reserved</p>
+		</address>
+		<div class="f-logo">
+			<a href="#">
+				<img src="images/footer_logo.png" alt="미니언즈 final logo" />
+			</a>	
+		</div>
+	</footer>
 </body>
 </html>
