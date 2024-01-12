@@ -4,8 +4,11 @@
 	1. 스타일 초기화 : 직접, reset 사용할건지
 	
 	2. 스타일 관련 공통 스타일, 각 구역별 세부 스타일(코딩 컨벤션)
+		- 헤더 ~ 푸터
 	
 	3. 레이아웃 기법: 여러가지~ 어떤것을 어떻게 사용할지
+		- 대부분 : flexbox
+		- 부분 : float
 */
 * {
 	margin: 0;
@@ -17,3 +20,32 @@ body {
 	font-family: 'Maven Pro', 'Noto Sans KR', sans-serif;
 	/*글꼴 순서가 내 html에서 지원하는 우선순서  */
 }
+/*01. 레이아웃 공통  */
+.d-flex {
+	display: flex
+}
+.justify-center {
+	justify-content: center
+}
+.justify-between {
+	justify-content: space-between;
+}
+.justify-around {
+	justify-content: space-around;
+}
+.align-center {
+	align-items: center;
+}
+.align-self-center {
+	align-self: center; 
+}
+.container {
+	max-width: 1000px;
+}
+.mx-auto {
+	margin: 0 auto;
+}
+/*02. 레이아웃 구역별 세부 클래스 정의  */
+/*02-1. header 클래스 정의  */
+/*02-2. main 클래스 정의  */
+/*02-3. footer 클래스 정의  */
