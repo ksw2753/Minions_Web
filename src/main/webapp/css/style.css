@@ -176,5 +176,8 @@ main .character {
 	border: 2px solid var(--main-font-color);
 	flex: 1; /* width, height 가 없지만, 유연한 레이아웃  */
 	text-align:center;
+}	
+aside {
+	background-color: var(--main-font-color);
 }
 /*02-3. footer 클래스 정의  */
