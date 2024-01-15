@@ -36,6 +36,9 @@ a, a:link {
 	text-decoration: none;
 }	
 /*01. 레이아웃 공통  */
+.fs-0 {
+	font-size: 0;
+}
 .d-none {
 	display: none;
 }
@@ -62,6 +65,18 @@ a, a:link {
 }
 .container {
 	max-width: 1000px;
+}
+.py-1 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.py-2 {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.py-3 {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 .mx-auto {
 	margin: 0 auto;
@@ -179,5 +194,17 @@ main .character {
 }	
 aside {
 	background-color: var(--main-font-color);
+	text-align: center;
 }
 /*02-3. footer 클래스 정의  */
+.extra-links {
+	font-size: 0.75rem;
+	color: #888888;
+}
+.extra-links a:hover {
+	color: #000000;
+}
+.site-info p {
+	font-size: 0.55rem;
+	color: #888888;
+}
