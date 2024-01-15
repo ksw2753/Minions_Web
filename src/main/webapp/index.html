@@ -19,7 +19,7 @@
 	<!--div보단 section(시멘틱)이 더 우선순위 -->
 	<header>
 		<div class="container mx-auto d-flex justify-between align-center">
-			<div class="links d-flex gap-1">
+			<div class="links d-flex gap-1 align-center justify-center">
 				<a href="#">로그인</a> 
 				<a href="#">회원가입</a> 
 				<a href="#">사이트맵</a>
@@ -34,12 +34,12 @@
 			</div>
 		</div>
 		<hr>
-		<nav>
-			<div class="container mx-auto d-flex justify-center">
+		<nav class = "main_nav">
+			<div class="topNav align-center container mx-auto d-flex justify-center gap-3">
 				<a href="#">미니언즈소개</a> 
 				<a href="#">캐릭터정보</a> 
 				<a href="#">커뮤니티</a> 
-				<ahref="#">제휴업체</a>
+				<a href="#">제휴업체</a>
 			</div>
 			<!-- /.container mx-auto d-flex justify-center -->
 		</nav>
@@ -48,14 +48,18 @@
 		<!--video, audio태그: 리소스가 있다면사용-->
 		<!--영상스트리밍 서버를 통해서 (유튜브)제공하는 iframe 태그사용-->
 		<!--iframe: 오래전 비표준태그(영상, 오디오를 연결하는)에서 현재는 표준으로 확정  -->
-		<div class="devils">
-			<img src="images/visual_img.png" alt="minions-devils" />
-		</div>
-		<iframe width="560" height="315"
-			src="https://www.youtube.com/embed/_mIrD-22dug?si=40Ph4T7wzO4ZDu1p&amp;start=10"
-			title="YouTube video player" frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen></iframe>
+		<div class="youtube container mx-auto">
+			<div class="devils pos-absolute">
+					<img src="images/visual_img.png" alt="minions-devils" />
+				</div>
+			<div class="youtubeWrap">
+				<iframe width="1560" height="1315"
+					src="https://www.youtube.com/embed/_mIrD-22dug?si=40Ph4T7wzO4ZDu1p&amp;start=10"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+			</div>
+		</div ><!--youtube-->
 		<!--유튜브 영상-공유-퍼가기-->
 	</section>
 	<main>

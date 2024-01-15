@@ -1,9 +1,13 @@
 @charset "UTF-8";
 :root {
-	--main-font-color: #000;
+	--base-font-color: #000;
+	--main-font-color: #f9c02d;
 	--main-link-color: #666;
 	--base-font-size: 16px;
 	--point-font-size: 20px;
+}/* 변수 지정 - hr에 적용중  */
+html {
+	font-size: 20px; /*문서 전체 root 폰트 크기  */
 }
 /*pc버전 스타일
 	
@@ -69,13 +73,20 @@ a, a:link {
 	gap: 3rem;
 }
 .border-top-thin {
-	border-top : 1px solid #000 
+	border-top : 1px solid #000; 
 }
 .border-left-thin {
 	border-top : 1px solid #000;
+}
 hr {
-	height: 0;
-	background-color: #000;
+	border: 0;
+	height: 2px;
+	background-color: var(--main-font-color);
+	position: relative;
+	top: -5px; 
+}
+.pos-absolute {
+	position: absolute;
 }
 /*02. 레이아웃 구역별 세부 클래스 정의  */
 /*02-1. header 클래스 정의  */
@@ -83,6 +94,45 @@ hr {
 	font-size: 14px;
 	color: var(--main-link-color);
 }
-
+.main_nav a {
+	font-size: 0.9rem; 
+	font-weight: 700;
+	color: var(--main-font-color);
+}
+.main_nav a:hover {
+	color: var(--base-font-color);/*검정색임*/
+}
+.topNav {
+	height: 60px;
+}
+#trailer {
+	
+}
+.devils {
+	z-index: 10;/* 화면 송출 우선순위 조정 먼저 나와라!  */
+	left: 50%;
+	top: 40%;
+	transform: translateX(-50%)/* 변형: x축 이동(얼마)  */
+}
+.devils:visited {
+	display:none;
+}
+.devils:hover {
+	display:none;
+}
+.youtubeWrap{
+    position: relative;
+    height: 240px;
+    padding-top: 0px;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+.youtubeWrap iframe,.youtubeWrap object,.youtubeWrap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 /*02-2. main 클래스 정의  */
 /*02-3. footer 클래스 정의  */
